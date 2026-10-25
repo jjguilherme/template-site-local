@@ -52,7 +52,7 @@
       {
         "icone": "quartos",
         "titulo": "Quartos e banheiros",
-        "texto": "3 quartos, sendo 1 suíte com banheiro. Mais 1 banheiro dentro da casa e 2 banheiros na área externa."
+        "texto": "3 quartos, sendo 1 suíte com banheiro. Camas: 8 beliches e 2 camas de casal. Mais 1 banheiro dentro da casa e 2 banheiros na área externa."
       }
     ],
     "galeria": [
@@ -107,7 +107,7 @@
     ],
     "localizacao": {
       "texto": "Chácara no bairro da Igualdade, em São Manuel (SP), perto do Cataneo Angelo.",
-      "acesso": "[PREENCHER: como chegar e distância da cidade]",
+      "acesso": "A 5 minutos de São Manuel.",
       "foto": {
         "arquivo": "entrada-portao",
         "largura": 1200,
@@ -123,9 +123,10 @@
     "regras": [
       { "titulo": "Modalidades", "texto": "Temporada de fim de semana ou aluguel por dia." },
       { "titulo": "Entrada", "texto": "Na sexta, com horário a combinar." },
-      { "titulo": "Saída", "texto": "No sábado, às 18h." },
+      { "titulo": "Saída", "texto": "No domingo, às 18h." },
       { "titulo": "Animais", "texto": "Aceitamos animais." },
-      { "titulo": "Som", "texto": "[PREENCHER]" },
+      { "titulo": "Som", "texto": "Som muito alto é proibido." },
+      { "titulo": "Festas", "texto": "A combinar com os donos pelo WhatsApp." },
       { "titulo": "Pernoite", "texto": "[PREENCHER]" }
     ],
     "faq": [
@@ -143,7 +144,7 @@
       },
       {
         "pergunta": "Quantos quartos e banheiros tem?",
-        "resposta": "3 quartos, sendo 1 suíte com banheiro, mais 1 banheiro dentro da casa e 2 banheiros na área externa. Número de camas: [PREENCHER]."
+        "resposta": "3 quartos, sendo 1 suíte com banheiro, mais 1 banheiro dentro da casa e 2 banheiros na área externa. São 8 beliches e 2 camas de casal."
       },
       {
         "pergunta": "Pode levar animais?",
@@ -155,11 +156,11 @@
       },
       {
         "pergunta": "Pode fazer festa ou usar som?",
-        "resposta": "[PREENCHER]"
+        "resposta": "Festas são a combinar com os donos pelo WhatsApp. Som muito alto é proibido."
       },
       {
         "pergunta": "Quais os horários de entrada e saída?",
-        "resposta": "Na temporada de fim de semana, a entrada é na sexta e a saída é no sábado, às 18h. O horário de entrada é combinado pelo WhatsApp."
+        "resposta": "Na temporada de fim de semana, a entrada é na sexta e a saída é no domingo, às 18h. O horário de entrada é combinado pelo WhatsApp."
       }
     ]
   },
