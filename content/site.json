@@ -3,7 +3,7 @@
     "nome": "Chácara Primavera",
     "tipo": "chacara",
     "cidade": "São Manuel (SP)",
-    "endereco": "Bairro da Igualdade, perto do Cataneo Angelo",
+    "endereco": "Bairro Catâneo Ângelo",
     "mapa": "https://www.google.com/maps/place/Ch%C3%A1cara+Primavera/@-22.7874517,-48.5457733,17z/data=!3m1!4b1!4m6!3m5!1s0x94c7250b6cd9faf5:0xc7fdf8bdab59e7ae!8m2!3d-22.7874517!4d-48.5431984",
     "latitude": -22.7874517,
     "longitude": -48.5431984,
@@ -130,7 +130,7 @@
       { "id": "externa", "nome": "Área externa" }
     ],
     "localizacao": {
-      "texto": "Bairro da Igualdade, São Manuel (SP), perto do Cataneo Angelo.",
+      "texto": "Bairro Catâneo Ângelo, São Manuel (SP).",
       "acesso": "A 5 minutos de São Manuel.",
       "foto": {
         "arquivo": "entrada-portao",

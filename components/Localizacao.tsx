@@ -4,8 +4,9 @@ import { Secao } from "./Secao";
 
 export function Localizacao() {
   const { localizacao } = dados.secoes;
-  const { mapa } = dados.negocio;
+  const { mapa, latitude, longitude, nome } = dados.negocio;
   const f = localizacao.foto;
+  const temCoordenadas = latitude !== 0 || longitude !== 0;
 
   return (
     <Secao id="localizacao" titulo="Localização" eyebrow="Onde fica">
@@ -34,6 +35,18 @@ export function Localizacao() {
           className="revela mx-auto h-auto max-h-[560px] w-auto rounded-lg object-cover shadow-cartao"
         />
       </div>
+
+      {temCoordenadas && (
+        <div className="revela mt-10 overflow-hidden rounded-lg shadow-cartao">
+          <iframe
+            title={`Mapa com a localização da ${nome}`}
+            src={`https://www.google.com/maps?q=${latitude},${longitude}&z=16&hl=pt-BR&output=embed`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block h-80 w-full border-0 sm:h-[26rem] lg:h-[30rem]"
+          />
+        </div>
+      )}
     </Secao>
   );
 }
