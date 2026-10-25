@@ -8,7 +8,7 @@ export function Estrutura() {
     <Secao
       id="estrutura"
       titulo="Estrutura"
-      intro={`${dados.secoes.sobre} Tudo o que está aqui aparece nas fotos.`}
+      intro={dados.secoes.sobre}
       fundo
     >
       <dl className="grid gap-x-12 md:grid-cols-2">
