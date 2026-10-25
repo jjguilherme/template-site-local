@@ -1,13 +1,16 @@
 {
   "negocio": {
-    "nome": "[PREENCHER: nome da chácara]",
-    "tipo": "chacara",
-    "cidade": "[PREENCHER: cidade]",
+    "nome": "[PREENCHER: nome do negócio]",
+    "tipo": "chacara | metalurgica | outro",
+    "cidade": "[PREENCHER: cidade (UF)]",
     "endereco": "[PREENCHER: endereço ou ponto de referência]",
     "mapa": "[PREENCHER: link do Google Maps]",
+    "latitude": 0,
+    "longitude": 0,
     "whatsapp": "[PREENCHER: só números com DDD, ex. 5543999999999]",
-    "mensagemWhatsapp": "Oi! Vi o site da chácara e queria saber se tem disponibilidade. Data: ___ | Número de pessoas: ___",
-    "capacidade": 20
+    "mensagemWhatsapp": "Oi! Vi o site e queria saber mais. Data: ___ | Número de pessoas: ___",
+    "capacidade": 0,
+    "url": "[PREENCHER: endereço público do site, sem barra no fim]"
   },
   "visual": {
     "corPrimaria": "#0B4F8A",
@@ -17,150 +20,53 @@
   },
   "secoes": {
     "hero": {
-      "titulo": "[PREENCHER: nome da chácara]",
-      "subtitulo": "Piscina, área gourmet e fogueira, com vista para o campo.",
-      "foto": "piscina-casa"
+      "titulo": "[PREENCHER]",
+      "subtitulo": "[PREENCHER]",
+      "foto": "[PREENCHER: nome do arquivo em public/fotos, sem .jpg]",
+      "enquadramento": "50% 50%"
     },
-    "sobre": "Chácara para alugar, com espaço para até 20 pessoas.",
+    "sobre": "[PREENCHER]",
     "valores": "Consulte valores e datas pelo WhatsApp",
     "estrutura": [
       {
-        "icone": "piscina",
-        "titulo": "Piscina",
-        "texto": "Piscina com revestimento de pastilha azul, cascata, ducha externa e espreguiçadeiras."
-      },
-      {
-        "icone": "cobertura",
-        "titulo": "Área coberta e sinuca",
-        "texto": "Varanda ampla com piso de pedra, estrutura de madeira, telhado colonial e mesa de sinuca."
-      },
-      {
-        "icone": "churrasqueira",
-        "titulo": "Área gourmet",
-        "texto": "Churrasqueira de tijolo, balcão, pia, fogão e geladeiras, com janela para o campo."
-      },
-      {
-        "icone": "fogueira",
-        "titulo": "Fogueira",
-        "texto": "Espaço de fogueira com bancos, gramado e vista aberta."
-      },
-      {
-        "icone": "casa",
-        "titulo": "Casa",
-        "texto": "Sala com sofá e TV, cozinha equipada (fogão de 5 bocas, geladeira, micro-ondas e mesa) e portas para os quartos."
-      },
-      {
-        "icone": "quartos",
-        "titulo": "Quartos, camas e banheiros",
-        "texto": "[PREENCHER: número de quartos, camas e banheiros]"
+        "icone": "piscina | cobertura | churrasqueira | fogueira | casa | quartos",
+        "titulo": "[PREENCHER]",
+        "texto": "[PREENCHER]",
+        "foto": "[PREENCHER: arquivo da galeria, ou null]"
       }
     ],
     "galeria": [
       {
-        "arquivo": "piscina-casa",
-        "largura": 1280,
-        "altura": 1064,
-        "alt": "Piscina de pastilha azul em primeiro plano, com a casa de telhado colonial ao fundo"
-      },
-      {
-        "arquivo": "piscina-ducha",
+        "arquivo": "[PREENCHER: nome do arquivo em public/fotos, sem .jpg]",
+        "categoria": "[PREENCHER: id de uma categoria abaixo]",
         "largura": 1280,
         "altura": 960,
-        "alt": "Piscina com cascata, ducha externa e espreguiçadeiras azuis, com gramado ao fundo"
-      },
-      {
-        "arquivo": "varanda-sinuca-vista",
-        "largura": 1600,
-        "altura": 900,
-        "alt": "Varanda coberta com mesa de sinuca e vista para o campo e a piscina"
-      },
-      {
-        "arquivo": "area-gourmet",
-        "largura": 1280,
-        "altura": 960,
-        "alt": "Área gourmet com churrasqueira de tijolo, balcão de tijolo, geladeiras e janela para a plantação"
-      },
-      {
-        "arquivo": "fogueira",
-        "largura": 1280,
-        "altura": 960,
-        "alt": "Espaço de fogueira com bancos, entre palmeiras e gramado"
-      },
-      {
-        "arquivo": "sala",
-        "largura": 1280,
-        "altura": 960,
-        "alt": "Sala da casa com sofá de couro, TV na parede e portas para os quartos"
-      },
-      {
-        "arquivo": "cozinha",
-        "largura": 1280,
-        "altura": 960,
-        "alt": "Cozinha com fogão, geladeira, armários brancos, micro-ondas e mesa com toalha xadrez"
-      },
-      {
-        "arquivo": "vista-geral",
-        "largura": 1600,
-        "altura": 900,
-        "alt": "Vista geral do gramado, com a casa azul, a piscina e a plantação ao fundo"
+        "alt": "[PREENCHER: descreva o que a foto mostra]"
       }
     ],
+    "categorias": [{ "id": "[PREENCHER]", "nome": "[PREENCHER]" }],
     "localizacao": {
-      "texto": "Chácara em [PREENCHER: cidade].",
-      "acesso": "[PREENCHER: como chegar e distância da cidade]",
+      "texto": "[PREENCHER: bairro, cidade e ponto de referência]",
+      "acesso": "[PREENCHER: distância ou como chegar]",
       "foto": {
-        "arquivo": "entrada-portao",
+        "arquivo": "[PREENCHER]",
         "largura": 1200,
         "altura": 1600,
-        "alt": "Caminho de terra e grama que leva da porteira de madeira até a piscina"
+        "alt": "[PREENCHER]"
       }
     },
     "reservar": [
-      "Chame no WhatsApp e diga a data e quantas pessoas vão.",
-      "Confirme disponibilidade, valores e regras com os donos.",
-      "Combine os detalhes da reserva direto com os donos."
+      "Chame no WhatsApp e informe a data e o número de pessoas.",
+      "Receba a disponibilidade, os valores e as regras.",
+      "Confirme a reserva com os donos."
     ],
-    "regras": [
-      { "titulo": "Entrada e saída", "texto": "[PREENCHER: horários]" },
-      { "titulo": "Som", "texto": "[PREENCHER]" },
-      { "titulo": "Animais", "texto": "[PREENCHER]" },
-      { "titulo": "Pernoite", "texto": "[PREENCHER]" }
-    ],
-    "faq": [
-      {
-        "pergunta": "Quantas pessoas cabem?",
-        "resposta": "A chácara comporta até 20 pessoas."
-      },
-      {
-        "pergunta": "Quanto custa?",
-        "resposta": "Consulte valores e datas pelo WhatsApp."
-      },
-      {
-        "pergunta": "Como faço a reserva?",
-        "resposta": "Pelo WhatsApp: informe a data e o número de pessoas e os donos respondem com a disponibilidade."
-      },
-      {
-        "pergunta": "Quantos quartos e camas tem?",
-        "resposta": "[PREENCHER]"
-      },
-      {
-        "pergunta": "Pode levar animais?",
-        "resposta": "[PREENCHER]"
-      },
-      {
-        "pergunta": "Pode fazer festa ou usar som?",
-        "resposta": "[PREENCHER]"
-      },
-      {
-        "pergunta": "Quais os horários de entrada e saída?",
-        "resposta": "[PREENCHER]"
-      }
-    ]
+    "regras": [{ "titulo": "[PREENCHER]", "texto": "[PREENCHER]" }],
+    "faq": [{ "pergunta": "[PREENCHER]", "resposta": "[PREENCHER]" }]
   },
   "chatbot": {
     "ativo": false,
-    "nomeAssistente": "Assistente da chácara",
-    "instrucoes": "Você é o assistente virtual do site da chácara. Responda só com as informações deste arquivo. Se não souber ou o dado estiver como [PREENCHER], diga que não sabe e ofereça o WhatsApp. Nunca invente preço, disponibilidade ou prazo.",
-    "perguntasParaOrcamento": ["Qual a data desejada?", "Quantas pessoas vão?"]
+    "nomeAssistente": "Assistente",
+    "instrucoes": "Responda só com as informações deste arquivo. Se não souber, diga que não sabe e ofereça o WhatsApp. Nunca invente preço ou disponibilidade.",
+    "perguntasParaOrcamento": ["[PREENCHER]"]
   }
 }

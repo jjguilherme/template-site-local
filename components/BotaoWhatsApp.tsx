@@ -2,36 +2,39 @@ import { dados, linkWhatsapp, whatsappPronto } from "@/lib/site";
 import { IconeWhatsapp } from "./Icones";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-colors";
+  "inline-flex items-center justify-center gap-2 rounded-full bg-[#117a3d] font-semibold text-white transition-colors hover:bg-[#0d6532]";
 
-/** Botão de uso no meio da página. */
-export function BotaoWhatsApp({ rotulo = "Chamar no WhatsApp" }: { rotulo?: string }) {
+function propsDoLink() {
   const pronto = whatsappPronto(dados.negocio.whatsapp);
+  return {
+    href: linkWhatsapp(),
+    ...(pronto ? { target: "_blank", rel: "noopener noreferrer" } : {}),
+    aviso: !pronto,
+  };
+}
+
+/** Botão para o meio da página. */
+export function BotaoWhatsApp({ rotulo = "Chamar no WhatsApp" }: { rotulo?: string }) {
+  const { aviso, ...link } = propsDoLink();
   return (
-    <a
-      href={linkWhatsapp()}
-      {...(pronto ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className={`${base} bg-[#117a3d] px-6 py-3.5 text-base text-white hover:bg-[#0d6532]`}
-    >
+    <a {...link} className={`${base} px-6 py-3.5 text-base`}>
       <IconeWhatsapp />
       {rotulo}
-      {!pronto && <span className="sr-only"> (número ainda não informado)</span>}
+      {aviso && <span className="sr-only"> (número ainda não informado)</span>}
     </a>
   );
 }
 
-/** Botão fixo, sempre visível. No celular fica no rodapé da tela. */
-export function BotaoWhatsAppFixo() {
-  const pronto = whatsappPronto(dados.negocio.whatsapp);
+/** Barra fixa no rodapé da tela, só no celular. No computador o botão fica no cabeçalho, sem cobrir o conteúdo. */
+export function BarraWhatsAppMovel() {
+  const { aviso, ...link } = propsDoLink();
   return (
-    <a
-      href={linkWhatsapp()}
-      {...(pronto ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className={`${base} fixed bottom-4 right-4 z-40 bg-[#117a3d] px-5 py-3.5 text-base text-white shadow-lg shadow-black/25 hover:bg-[#0d6532]`}
-    >
-      <IconeWhatsapp />
-      WhatsApp
-      {!pronto && <span className="sr-only"> (número ainda não informado)</span>}
-    </a>
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-linha bg-fundo/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden">
+      <a {...link} className={`${base} min-h-12 w-full px-6 text-base`}>
+        <IconeWhatsapp />
+        Chamar no WhatsApp
+        {aviso && <span className="sr-only"> (número ainda não informado)</span>}
+      </a>
+    </div>
   );
 }

@@ -17,7 +17,9 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  env: { NEXT_PUBLIC_BASE_PATH: basePath },
+  // O ano do rodapé é fixado na hora do build.
+  env: { NEXT_PUBLIC_BASE_PATH: basePath, NEXT_PUBLIC_ANO: String(new Date().getFullYear()) },
+  images: { formats: ["image/avif", "image/webp"] },
   ...(previa && {
     output: "export",
     basePath,

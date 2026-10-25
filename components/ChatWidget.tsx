@@ -51,7 +51,7 @@ export function ChatWidget({ nome }: { nome: string }) {
     : undefined;
 
   return (
-    <div className="fixed bottom-4 left-4 z-40">
+    <div className="fixed bottom-20 left-4 z-40 md:bottom-4">
       {aberto && (
         <section
           aria-label={nome}

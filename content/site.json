@@ -5,9 +5,12 @@
     "cidade": "São Manuel (SP)",
     "endereco": "Bairro da Igualdade, perto do Cataneo Angelo",
     "mapa": "https://www.google.com/maps/place/Ch%C3%A1cara+Primavera/@-22.7874517,-48.5457733,17z/data=!3m1!4b1!4m6!3m5!1s0x94c7250b6cd9faf5:0xc7fdf8bdab59e7ae!8m2!3d-22.7874517!4d-48.5431984",
+    "latitude": -22.7874517,
+    "longitude": -48.5431984,
     "whatsapp": "5514991619448",
     "mensagemWhatsapp": "Oi! Vi o site da Chácara Primavera e queria saber se tem disponibilidade. Data: ___ | Número de pessoas: ___",
-    "capacidade": 20
+    "capacidade": 18,
+    "url": "https://jjguilherme.github.io/template-site-local"
   },
   "visual": {
     "corPrimaria": "#0B4F8A",
@@ -19,94 +22,115 @@
     "hero": {
       "titulo": "Chácara Primavera",
       "subtitulo": "Piscina, área gourmet e fogueira, com vista para o campo.",
-      "foto": "piscina-casa"
+      "foto": "piscina-casa",
+      "enquadramento": "50% 65%"
     },
-    "sobre": "Chácara para alugar, com espaço para até 20 pessoas.",
+    "sobre": "Piscina, área coberta, área gourmet, fogueira e casa com 3 quartos, para até 18 pessoas.",
     "valores": "Consulte valores e datas pelo WhatsApp",
     "estrutura": [
       {
         "icone": "piscina",
         "titulo": "Piscina",
-        "texto": "Piscina com revestimento de pastilha azul, cascata, ducha externa e espreguiçadeiras."
+        "texto": "Piscina com revestimento de pastilha azul, cascata, ducha externa e espreguiçadeiras.",
+        "foto": "piscina-ducha"
       },
       {
         "icone": "cobertura",
         "titulo": "Área coberta e sinuca",
-        "texto": "Varanda ampla com piso de pedra, estrutura de madeira, telhado colonial e mesa de sinuca."
+        "texto": "Varanda ampla com piso de pedra, estrutura de madeira, telhado colonial e mesa de sinuca.",
+        "foto": "varanda-sinuca-vista"
       },
       {
         "icone": "churrasqueira",
         "titulo": "Área gourmet",
-        "texto": "Churrasqueira de tijolo, balcão, pia, fogão e geladeiras, com janela para o campo."
-      },
-      {
-        "icone": "fogueira",
-        "titulo": "Fogueira",
-        "texto": "Espaço de fogueira com bancos, gramado e vista aberta."
+        "texto": "Churrasqueira de tijolo, balcão, pia, fogão e geladeiras, com janela para o campo.",
+        "foto": "area-gourmet"
       },
       {
         "icone": "casa",
         "titulo": "Casa",
-        "texto": "Sala com sofá e TV, cozinha equipada (fogão de 5 bocas, geladeira, micro-ondas e mesa) e portas para os quartos."
+        "texto": "Sala com sofá e TV, cozinha equipada (fogão de 5 bocas, geladeira, micro-ondas e mesa) e portas para os quartos.",
+        "foto": "sala"
+      },
+      {
+        "icone": "fogueira",
+        "titulo": "Fogueira",
+        "texto": "Espaço de fogueira com bancos, gramado e vista aberta.",
+        "foto": "fogueira"
       },
       {
         "icone": "quartos",
         "titulo": "Quartos e banheiros",
-        "texto": "3 quartos, sendo 1 suíte com banheiro. Camas: 8 beliches e 2 camas de casal. Mais 1 banheiro dentro da casa e 2 banheiros na área externa."
+        "texto": "3 quartos, sendo 1 suíte com banheiro. Camas: 8 beliches e 2 camas de casal. Mais 1 banheiro dentro da casa e 2 banheiros na área externa.",
+        "foto": null
       }
     ],
     "galeria": [
       {
         "arquivo": "piscina-casa",
+        "categoria": "piscina",
         "largura": 1280,
         "altura": 1064,
         "alt": "Piscina de pastilha azul em primeiro plano, com a casa de telhado colonial ao fundo"
       },
       {
         "arquivo": "piscina-ducha",
+        "categoria": "piscina",
         "largura": 1280,
         "altura": 960,
         "alt": "Piscina com cascata, ducha externa e espreguiçadeiras azuis, com gramado ao fundo"
       },
       {
         "arquivo": "varanda-sinuca-vista",
+        "categoria": "externa",
         "largura": 1600,
         "altura": 900,
         "alt": "Varanda coberta com mesa de sinuca e vista para o campo e a piscina"
       },
       {
         "arquivo": "area-gourmet",
+        "categoria": "gourmet",
         "largura": 1280,
         "altura": 960,
         "alt": "Área gourmet com churrasqueira de tijolo, balcão de tijolo, geladeiras e janela para a plantação"
       },
       {
         "arquivo": "fogueira",
+        "categoria": "externa",
         "largura": 1280,
         "altura": 960,
         "alt": "Espaço de fogueira com bancos, entre palmeiras e gramado"
       },
       {
         "arquivo": "sala",
+        "categoria": "casa",
         "largura": 1280,
         "altura": 960,
         "alt": "Sala da casa com sofá de couro, TV na parede e portas para os quartos"
       },
       {
         "arquivo": "cozinha",
+        "categoria": "casa",
         "largura": 1280,
         "altura": 960,
         "alt": "Cozinha com fogão, geladeira, armários brancos, micro-ondas e mesa com toalha xadrez"
       },
       {
         "arquivo": "vista-geral",
+        "categoria": "externa",
         "largura": 1600,
         "altura": 900,
         "alt": "Vista geral do gramado, com a casa azul, a piscina e a plantação ao fundo"
       }
     ],
+    "categorias": [
+      { "id": "piscina", "nome": "Piscina" },
+      { "id": "gourmet", "nome": "Área gourmet" },
+      { "id": "casa", "nome": "Casa" },
+      { "id": "externa", "nome": "Área externa" }
+    ],
     "localizacao": {
-      "texto": "Chácara no bairro da Igualdade, em São Manuel (SP), perto do Cataneo Angelo.",
+      "texto": "Bairro da Igualdade, São Manuel (SP), perto do Cataneo Angelo.",
       "acesso": "A 5 minutos de São Manuel.",
       "foto": {
         "arquivo": "entrada-portao",
@@ -116,9 +140,9 @@
       }
     },
     "reservar": [
-      "Chame no WhatsApp e diga a data e quantas pessoas vão.",
-      "Confirme disponibilidade, valores e regras com os donos.",
-      "Combine os detalhes da reserva direto com os donos."
+      "Chame no WhatsApp e informe a data e o número de pessoas.",
+      "Receba a disponibilidade, os valores e as regras.",
+      "Confirme a reserva com os donos."
     ],
     "regras": [
       { "titulo": "Modalidades", "texto": "Temporada de fim de semana ou aluguel por dia." },
@@ -131,7 +155,7 @@
     "faq": [
       {
         "pergunta": "Quantas pessoas cabem?",
-        "resposta": "A chácara comporta até 20 pessoas."
+        "resposta": "A chácara comporta até 18 pessoas."
       },
       {
         "pergunta": "Quanto custa?",
@@ -139,7 +163,7 @@
       },
       {
         "pergunta": "Como faço a reserva?",
-        "resposta": "Pelo WhatsApp: informe a data e o número de pessoas e os donos respondem com a disponibilidade."
+        "resposta": "Pelo WhatsApp: informe a data e o número de pessoas, e os donos respondem com a disponibilidade."
       },
       {
         "pergunta": "Quantos quartos e banheiros tem?",
@@ -155,7 +179,7 @@
       },
       {
         "pergunta": "Pode fazer festa ou usar som?",
-        "resposta": "Festas são a combinar com os donos pelo WhatsApp. Som muito alto é proibido."
+        "resposta": "Festas são combinadas com os donos pelo WhatsApp. Som muito alto é proibido."
       },
       {
         "pergunta": "Quais os horários de entrada e saída?",

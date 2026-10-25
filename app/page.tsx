@@ -1,4 +1,4 @@
-import { BotaoWhatsAppFixo } from "@/components/BotaoWhatsApp";
+import { BarraWhatsAppMovel } from "@/components/BotaoWhatsApp";
 import { Cabecalho } from "@/components/Cabecalho";
 import { ChatWidget } from "@/components/ChatWidget";
 import { ComoReservar } from "@/components/ComoReservar";
@@ -11,15 +11,21 @@ import { Regras } from "@/components/Regras";
 import { Rodape } from "@/components/Rodape";
 import { Secao } from "@/components/Secao";
 import { dados } from "@/lib/site";
+import { dadosEstruturados } from "@/lib/seo";
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        // O conteúdo vem de content/site.json; "<" é escapado para não fechar a tag por engano.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(dadosEstruturados()).replace(/</g, "\\u003c") }}
+      />
       <Cabecalho />
       <main>
         <Hero />
-        <Secao id="galeria" titulo="Fotos" intro="Fotos reais da chácara.">
-          <Galeria fotos={dados.secoes.galeria} />
+        <Secao id="galeria" titulo="Fotos" eyebrow="Conheça a chácara" intro="Fotos reais do lugar. Toque numa foto para ampliar.">
+          <Galeria fotos={dados.secoes.galeria} categorias={dados.secoes.categorias} />
         </Secao>
         <Estrutura />
         <ComoReservar />
@@ -28,7 +34,7 @@ export default function Home() {
         <Faq />
       </main>
       <Rodape />
-      <BotaoWhatsAppFixo />
+      <BarraWhatsAppMovel />
       {dados.chatbot.ativo && <ChatWidget nome={dados.chatbot.nomeAssistente} />}
     </>
   );

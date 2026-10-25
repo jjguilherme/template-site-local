@@ -4,18 +4,21 @@
   --primaria: #0b4f8a;
   --secundaria: #a94b25;
   --fundo: #faf6ef;
+  --areia: #f0e7d6;
   --tinta: #1b2430;
-  --suave: #5b6573;
-  --linha: #e4dccd;
+  --suave: #566070;
+  --linha: #e0d6c3;
 }
 
 @theme inline {
   --color-primaria: var(--primaria);
   --color-secundaria: var(--secundaria);
   --color-fundo: var(--fundo);
+  --color-areia: var(--areia);
   --color-tinta: var(--tinta);
   --color-suave: var(--suave);
   --color-linha: var(--linha);
+  --shadow-cartao: 0 1px 2px rgb(27 36 48 / 0.06), 0 10px 24px -14px rgb(27 36 48 / 0.28);
 }
 
 html {
@@ -33,17 +36,24 @@ body {
   background: var(--fundo);
   color: var(--tinta);
   font-family: var(--font-texto), system-ui, sans-serif;
+  line-height: 1.6;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--font-titulo), Georgia, serif;
+  line-height: 1.15;
 }
 
 :focus-visible {
   outline: 3px solid var(--secundaria);
   outline-offset: 3px;
+}
+
+/* Sobre fundo azul, o anel de foco terracota perde contraste. */
+.sobre-azul :focus-visible {
+  outline-color: #ffffff;
 }
 
 /* Campo ainda não confirmado: fica visível de propósito. */
@@ -64,4 +74,27 @@ details > summary::-webkit-details-marker {
 }
 details[open] .seta {
   transform: rotate(180deg);
+}
+
+/* Entrada suave ao rolar. Só em navegadores com animação por rolagem
+   e só para quem não pediu menos movimento; nos demais o conteúdo já aparece. */
+@keyframes revela {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .revela {
+      animation: revela linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
 }

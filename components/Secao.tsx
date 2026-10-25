@@ -1,24 +1,41 @@
 import type { ReactNode } from "react";
 
+const tons = {
+  claro: "bg-fundo",
+  areia: "bg-areia",
+  azul: "bg-primaria text-white sobre-azul",
+};
+
 export function Secao({
   id,
   titulo,
+  eyebrow,
   intro,
   children,
-  fundo = false,
+  tom = "claro",
 }: {
   id: string;
   titulo: string;
+  eyebrow?: string;
   intro?: ReactNode;
   children: ReactNode;
-  fundo?: boolean;
+  tom?: keyof typeof tons;
 }) {
+  const azul = tom === "azul";
   return (
-    <section id={id} className={fundo ? "bg-[#f1e9da]" : ""}>
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-        <h2 className="text-3xl font-semibold text-primaria sm:text-4xl">{titulo}</h2>
-        {intro && <p className="mt-3 max-w-2xl text-lg text-suave">{intro}</p>}
-        <div className="mt-10">{children}</div>
+    <section id={id} className={tons[tom]}>
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+        <header className="revela max-w-2xl">
+          {eyebrow && (
+            <p className={`mb-4 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em] ${azul ? "text-[#f3d9c8]" : "text-secundaria"}`}>
+              <span aria-hidden="true" className="h-px w-8 bg-current" />
+              {eyebrow}
+            </p>
+          )}
+          <h2 className={`text-3xl font-semibold sm:text-5xl ${azul ? "text-white" : "text-primaria"}`}>{titulo}</h2>
+          {intro && <p className={`mt-4 text-lg ${azul ? "text-white/90" : "text-suave"}`}>{intro}</p>}
+        </header>
+        <div className="mt-12 sm:mt-14">{children}</div>
       </div>
     </section>
   );
