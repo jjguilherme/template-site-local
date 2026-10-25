@@ -26,5 +26,5 @@ Para ligar:
 4. Faça a revisão de segurança descrita em `docs/CHATBOT.md` antes de publicar.
 
 ## Antes de publicar
-- Trocar `robots` em `app/layout.tsx` (hoje `noindex`) quando o site estiver pronto.
+- Para esconder um site em construção do Google, adicione `robots: { index: false, follow: false }` em `metadata` no `app/layout.tsx`.
 - Informar o WhatsApp real. Enquanto for `[PREENCHER]`, os botões levam para a seção "Como reservar".

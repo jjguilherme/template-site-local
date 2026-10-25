@@ -19,7 +19,6 @@ const { negocio, secoes, visual } = dados;
 export const metadata: Metadata = {
   title: `${negocio.nome} | Chácara para alugar`,
   description: `${secoes.hero.subtitulo} Até ${negocio.capacidade} pessoas.`,
-  robots: { index: false, follow: false },
 };
 
 export const viewport: Viewport = {

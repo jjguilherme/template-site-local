@@ -126,8 +126,7 @@
       { "titulo": "Saída", "texto": "No domingo, às 18h." },
       { "titulo": "Animais", "texto": "Aceitamos animais." },
       { "titulo": "Som", "texto": "Som muito alto é proibido." },
-      { "titulo": "Festas", "texto": "A combinar com os donos pelo WhatsApp." },
-      { "titulo": "Pernoite", "texto": "[PREENCHER]" }
+      { "titulo": "Festas", "texto": "A combinar com os donos pelo WhatsApp." }
     ],
     "faq": [
       {
