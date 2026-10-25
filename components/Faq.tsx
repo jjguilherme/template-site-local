@@ -4,8 +4,8 @@ import { Secao } from "./Secao";
 
 export function Faq() {
   return (
-    <Secao id="faq" titulo="Perguntas frequentes" fundo>
-      <div className="max-w-3xl divide-y divide-linha border-y border-linha">
+    <Secao id="faq" titulo="Perguntas frequentes" eyebrow="Dúvidas">
+      <div className="revela max-w-3xl divide-y divide-linha border-y border-linha">
         {dados.secoes.faq.map((item) => (
           <details key={item.pergunta} className="group py-1">
             <summary className="flex min-h-12 cursor-pointer items-center justify-between gap-4 py-3 text-lg font-semibold">

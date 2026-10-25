@@ -22,6 +22,10 @@ export function linkWhatsapp(mensagem?: string): string {
   return `https://wa.me/${whatsapp}?text=${texto}`;
 }
 
+export function fotoDaGaleria(arquivo: string): FotoGaleria | undefined {
+  return dados.secoes.galeria.find((f) => f.arquivo === arquivo);
+}
+
 /** Em prévias no GitHub Pages o site fica numa subpasta (NEXT_PUBLIC_BASE_PATH). */
 export function foto(arquivo: string): string {
   return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/fotos/${arquivo}.jpg`;

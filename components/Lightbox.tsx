@@ -27,7 +27,10 @@ export function Lightbox({
   useEffect(() => {
     const d = dialogo.current;
     if (!d) return;
-    if (aberto && !d.open) d.showModal();
+    if (aberto && !d.open) {
+      d.showModal();
+      d.querySelector<HTMLElement>("[data-fechar]")?.focus();
+    }
     if (!aberto && d.open) d.close();
   }, [aberto]);
 
@@ -62,14 +65,7 @@ export function Lightbox({
           onPointerUp={aoSoltar}
         >
           <div className="relative flex min-h-0 w-full flex-1 items-center justify-center">
-            <Image
-              src={foto(f.arquivo)}
-              alt={f.alt}
-              width={f.largura}
-              height={f.altura}
-              sizes="100vw"
-              className="max-h-full w-auto max-w-full rounded-md object-contain"
-            />
+            <Image src={foto(f.arquivo)} alt={f.alt} fill sizes="100vw" className="object-contain" />
           </div>
           <p className="max-w-2xl text-center text-sm text-white">
             {f.alt} ({indice + 1} de {fotos.length})
@@ -80,7 +76,7 @@ export function Lightbox({
                 <path d="M15 6l-6 6 6 6" />
               </svg>
             </button>
-            <button type="button" autoFocus onClick={onFechar} className="h-12 rounded-full bg-white px-6 font-semibold text-tinta hover:bg-white/90">
+            <button type="button" data-fechar onClick={onFechar} className="h-12 rounded-full bg-white px-6 font-semibold text-tinta hover:bg-white/90">
               Fechar
             </button>
             <button type="button" className={botao} disabled={indice === fotos.length - 1} onClick={() => onMudar(indice + 1)} aria-label="Próxima foto">

@@ -5,8 +5,9 @@ Modelo de site de uma página para negócio local (Next.js, TypeScript, Tailwind
 ## Para cada cliente
 1. Copie esta pasta.
 2. Edite `content/site.json` (nome, textos, cores, WhatsApp, fotos, chatbot). `content/site.example.json` é a cópia de referência.
-3. Ponha as fotos tratadas em `public/fotos/` (JPG, sem metadados) e liste cada uma em `secoes.galeria`.
-4. Tudo que ainda estiver como `[PREENCHER]` aparece destacado em amarelo no site. Resolva todos antes de publicar.
+3. Ponha as fotos tratadas em `public/fotos/` (JPG, sem metadados) e liste cada uma em `secoes.galeria`, com `categoria` (veja `secoes.categorias`) e texto alternativo descritivo.
+4. Gere `public/og.jpg` (1200x630) a partir da foto de capa: é a imagem que aparece quando o link é compartilhado. Preencha `negocio.url` com o endereço público.
+5. Tudo que ainda estiver como `[PREENCHER]` aparece destacado em amarelo no site. Resolva todos antes de publicar.
 
 ## Comandos
 ```bash

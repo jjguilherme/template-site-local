@@ -8,7 +8,7 @@ export function Localizacao() {
   const f = localizacao.foto;
 
   return (
-    <Secao id="localizacao" titulo="Localização" fundo>
+    <Secao id="localizacao" titulo="Localização" eyebrow="Onde fica">
       <div className="grid gap-10 md:grid-cols-2 md:items-center">
         <div className="space-y-6">
           <p className="font-[family-name:var(--font-titulo)] text-2xl leading-snug sm:text-3xl">
@@ -31,7 +31,7 @@ export function Localizacao() {
           width={f.largura}
           height={f.altura}
           sizes="(min-width: 768px) 480px, 100vw"
-          className="mx-auto h-auto max-h-[560px] w-auto rounded-xl object-cover"
+          className="revela mx-auto h-auto max-h-[560px] w-auto rounded-lg object-cover shadow-cartao"
         />
       </div>
     </Secao>
