@@ -5,8 +5,8 @@
     "cidade": "São Manuel (SP)",
     "endereco": "Bairro da Igualdade, perto do Cataneo Angelo",
     "mapa": "https://www.google.com/maps/place/Ch%C3%A1cara+Primavera/@-22.7874517,-48.5457733,17z/data=!3m1!4b1!4m6!3m5!1s0x94c7250b6cd9faf5:0xc7fdf8bdab59e7ae!8m2!3d-22.7874517!4d-48.5431984",
-    "whatsapp": "[PREENCHER: só números com DDD, ex. 5543999999999]",
-    "mensagemWhatsapp": "Oi! Vi o site da chácara e queria saber se tem disponibilidade. Data: ___ | Número de pessoas: ___",
+    "whatsapp": "5514991619448",
+    "mensagemWhatsapp": "Oi! Vi o site da Chácara Primavera e queria saber se tem disponibilidade. Data: ___ | Número de pessoas: ___",
     "capacidade": 20
   },
   "visual": {
@@ -51,8 +51,8 @@
       },
       {
         "icone": "quartos",
-        "titulo": "Quartos, camas e banheiros",
-        "texto": "[PREENCHER: número de quartos, camas e banheiros]"
+        "titulo": "Quartos e banheiros",
+        "texto": "3 quartos, sendo 1 suíte com banheiro. Mais 1 banheiro dentro da casa e 2 banheiros na área externa."
       }
     ],
     "galeria": [
@@ -122,7 +122,7 @@
     ],
     "regras": [
       { "titulo": "Modalidades", "texto": "Temporada de fim de semana ou aluguel por dia." },
-      { "titulo": "Entrada", "texto": "Na sexta, a partir de [PREENCHER: horário]." },
+      { "titulo": "Entrada", "texto": "Na sexta, com horário a combinar." },
       { "titulo": "Saída", "texto": "No sábado, às 18h." },
       { "titulo": "Animais", "texto": "Aceitamos animais." },
       { "titulo": "Som", "texto": "[PREENCHER]" },
@@ -142,8 +142,8 @@
         "resposta": "Pelo WhatsApp: informe a data e o número de pessoas e os donos respondem com a disponibilidade."
       },
       {
-        "pergunta": "Quantos quartos e camas tem?",
-        "resposta": "[PREENCHER]"
+        "pergunta": "Quantos quartos e banheiros tem?",
+        "resposta": "3 quartos, sendo 1 suíte com banheiro, mais 1 banheiro dentro da casa e 2 banheiros na área externa. Número de camas: [PREENCHER]."
       },
       {
         "pergunta": "Pode levar animais?",
@@ -159,7 +159,7 @@
       },
       {
         "pergunta": "Quais os horários de entrada e saída?",
-        "resposta": "Na temporada de fim de semana, a entrada é na sexta e a saída é no sábado, às 18h. Horário de entrada: [PREENCHER]."
+        "resposta": "Na temporada de fim de semana, a entrada é na sexta e a saída é no sábado, às 18h. O horário de entrada é combinado pelo WhatsApp."
       }
     ]
   },
