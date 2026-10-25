@@ -1,9 +1,10 @@
 {
   "negocio": {
-    "nome": "[PREENCHER: nome da chácara]",
+    "nome": "Chácara Primavera",
     "tipo": "chacara",
-    "cidade": "[PREENCHER: cidade]",
-    "endereco": "[PREENCHER: endereço ou ponto de referência]",
+    "cidade": "São Manuel (SP)",
+    "endereco": "Bairro da Igualdade, perto do Cataneo Angelo",
+    "mapa": "https://www.google.com/maps/place/Ch%C3%A1cara+Primavera/@-22.7874517,-48.5457733,17z/data=!3m1!4b1!4m6!3m5!1s0x94c7250b6cd9faf5:0xc7fdf8bdab59e7ae!8m2!3d-22.7874517!4d-48.5431984",
     "whatsapp": "[PREENCHER: só números com DDD, ex. 5543999999999]",
     "mensagemWhatsapp": "Oi! Vi o site da chácara e queria saber se tem disponibilidade. Data: ___ | Número de pessoas: ___",
     "capacidade": 20
@@ -16,7 +17,7 @@
   },
   "secoes": {
     "hero": {
-      "titulo": "[PREENCHER: nome da chácara]",
+      "titulo": "Chácara Primavera",
       "subtitulo": "Piscina, área gourmet e fogueira, com vista para o campo.",
       "foto": "piscina-casa"
     },
@@ -105,7 +106,8 @@
       }
     ],
     "localizacao": {
-      "texto": "Chácara em [PREENCHER: cidade]. Como chegar e distância da cidade: [PREENCHER].",
+      "texto": "Chácara no bairro da Igualdade, em São Manuel (SP), perto do Cataneo Angelo.",
+      "acesso": "[PREENCHER: como chegar e distância da cidade]",
       "foto": {
         "arquivo": "entrada-portao",
         "largura": 1200,
@@ -119,9 +121,11 @@
       "Combine os detalhes da reserva direto com os donos."
     ],
     "regras": [
-      { "titulo": "Entrada e saída", "texto": "[PREENCHER: horários]" },
+      { "titulo": "Modalidades", "texto": "Temporada de fim de semana ou aluguel por dia." },
+      { "titulo": "Entrada", "texto": "Na sexta, a partir de [PREENCHER: horário]." },
+      { "titulo": "Saída", "texto": "No sábado, às 18h." },
+      { "titulo": "Animais", "texto": "Aceitamos animais." },
       { "titulo": "Som", "texto": "[PREENCHER]" },
-      { "titulo": "Animais", "texto": "[PREENCHER]" },
       { "titulo": "Pernoite", "texto": "[PREENCHER]" }
     ],
     "faq": [
@@ -143,7 +147,11 @@
       },
       {
         "pergunta": "Pode levar animais?",
-        "resposta": "[PREENCHER]"
+        "resposta": "Sim, aceitamos animais."
+      },
+      {
+        "pergunta": "Posso alugar só por um dia?",
+        "resposta": "Sim. Além da temporada de fim de semana, também alugamos por dia. Consulte valores e datas pelo WhatsApp."
       },
       {
         "pergunta": "Pode fazer festa ou usar som?",
@@ -151,7 +159,7 @@
       },
       {
         "pergunta": "Quais os horários de entrada e saída?",
-        "resposta": "[PREENCHER]"
+        "resposta": "Na temporada de fim de semana, a entrada é na sexta e a saída é no sábado, às 18h. Horário de entrada: [PREENCHER]."
       }
     ]
   },

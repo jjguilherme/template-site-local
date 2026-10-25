@@ -4,6 +4,7 @@
     "tipo": "chacara",
     "cidade": "[PREENCHER: cidade]",
     "endereco": "[PREENCHER: endereço ou ponto de referência]",
+    "mapa": "[PREENCHER: link do Google Maps]",
     "whatsapp": "[PREENCHER: só números com DDD, ex. 5543999999999]",
     "mensagemWhatsapp": "Oi! Vi o site da chácara e queria saber se tem disponibilidade. Data: ___ | Número de pessoas: ___",
     "capacidade": 20
@@ -105,7 +106,8 @@
       }
     ],
     "localizacao": {
-      "texto": "Chácara em [PREENCHER: cidade]. Como chegar e distância da cidade: [PREENCHER].",
+      "texto": "Chácara em [PREENCHER: cidade].",
+      "acesso": "[PREENCHER: como chegar e distância da cidade]",
       "foto": {
         "arquivo": "entrada-portao",
         "largura": 1200,

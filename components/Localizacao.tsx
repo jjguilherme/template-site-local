@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { dados, foto } from "@/lib/site";
+import { dados, foto, pendente } from "@/lib/site";
 import { Campo } from "./Campo";
 import { Secao } from "./Secao";
 
 export function Localizacao() {
   const { localizacao } = dados.secoes;
-  const { cidade, endereco } = dados.negocio;
+  const { cidade, endereco, mapa } = dados.negocio;
   const f = localizacao.foto;
 
   return (
@@ -21,7 +21,20 @@ export function Localizacao() {
           <p>
             <span className="font-semibold">Endereço ou ponto de referência:</span> <Campo texto={endereco} />
           </p>
-          <p className="text-base text-suave">O mapa entra aqui quando o endereço for confirmado.</p>
+          <p>
+            <span className="font-semibold">Como chegar:</span> <Campo texto={localizacao.acesso} />
+          </p>
+          {!pendente(mapa) && (
+            <a
+              href={mapa}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-primaria px-6 py-3.5 text-base font-semibold text-white hover:bg-[#093d6c]"
+            >
+              Abrir no Google Maps
+              <span className="sr-only"> (abre em nova aba)</span>
+            </a>
+          )}
         </div>
         <Image
           src={foto(f.arquivo)}
