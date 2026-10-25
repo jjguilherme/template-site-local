@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --primaria: #0b4f8a;
+  --secundaria: #a94b25;
+  --fundo: #faf6ef;
+  --tinta: #1b2430;
+  --suave: #5b6573;
+  --linha: #e4dccd;
+}
+
+@theme inline {
+  --color-primaria: var(--primaria);
+  --color-secundaria: var(--secundaria);
+  --color-fundo: var(--fundo);
+  --color-tinta: var(--tinta);
+  --color-suave: var(--suave);
+  --color-linha: var(--linha);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--fundo);
+  color: var(--tinta);
+  font-family: var(--font-texto), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-titulo), Georgia, serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--secundaria);
+  outline-offset: 3px;
+}
+
+/* Campo ainda não confirmado: fica visível de propósito. */
+.pendente {
+  background: #fff1c2;
+  color: #5c4300;
+  border: 1px dashed #b88a00;
+  border-radius: 0.25rem;
+  padding: 0 0.3em;
+  font-weight: 600;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .seta {
+  transform: rotate(180deg);
+}
