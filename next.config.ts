@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
     },
   },
   env: { NEXT_PUBLIC_BASE_PATH: basePath },
+  images: { formats: ["image/avif", "image/webp"] },
   ...(previa && {
     output: "export",
     basePath,

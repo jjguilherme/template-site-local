@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <Secao id="galeria" titulo="Fotos" intro="Fotos reais da chácara.">
-          <Galeria fotos={dados.secoes.galeria} />
+          <Galeria fotos={dados.secoes.galeria} categorias={dados.secoes.categorias} />
         </Secao>
         <Estrutura />
         <ComoReservar />
